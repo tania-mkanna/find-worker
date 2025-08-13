@@ -1,0 +1,27 @@
+.About-contaioner{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-between;
+    /* margin-top: 95px;
+    margin-bottom: 95px; */
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    width: 700px;
+}
+
+.left h1{
+    color: #298d1b;
+   
+}
+
+.left p{
+    font-size: 20px;
+}

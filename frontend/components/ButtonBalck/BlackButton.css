@@ -1,0 +1,21 @@
+.btn2{
+    width: 300px;
+    height: 50px;
+    background-color:rgb(24, 24, 24) ;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.btn2:hover{
+    background-color: #ffffff;
+    color: #298d1b;
+}

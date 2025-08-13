@@ -1,0 +1,25 @@
+.btn1{
+    padding: 12px 28px;
+    background-color: #298d1b;
+    border: 2px solid #298d1b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0,0.2);
+    color: white;
+    letter-spacing: .4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .4s ease;
+
+}
+
+
+.btn1:hover {
+  background: transparent;
+  color: #298d1b;
+}
+
+.selected {
+    background: transparent;
+    color: #298d1b;
+    border: 2px solid #298d1b;
+}

@@ -1,0 +1,45 @@
+
+
+.loginSec{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.userType{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+   
+}
+
+.form{   
+    
+    background-color: #298d1b;
+    border-radius:20px ;
+    width: min-content;
+    padding: 20px;
+    align-self: center;
+}
+.form form{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.form input{
+    margin-top: 10px;
+    font-size: 15px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    background: none;
+    margin-bottom: 10px;
+    margin-left:20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    border-bottom: 2px solid #ffffff;
+    color: white;
+}

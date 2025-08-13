@@ -1,0 +1,56 @@
+/* navigation */
+
+.largeScreen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 10;
+    position: fixed;
+    color: black; 
+    width: 100%;
+    /* padding: 2px 0px;  */
+    box-shadow: 4px 4px 8px rgba(194, 184, 255, 0.336);
+    background-color: #f8f8f8;
+}
+
+.navLinks {
+    display: flex;
+    list-style-type: none;
+   
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: #298d1b;
+    padding: 10px 16px;
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    transition: .4s ease;
+    animation-name: faded;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.navLinks a:hover{
+    color:#505050 ;
+}
+
+
+.navLinks .active{
+    color: #505050; 
+}
+
+/* animation */
+@keyframes faded {
+    0% {
+        opacity: 0;
+        transform: translateZ(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

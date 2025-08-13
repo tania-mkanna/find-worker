@@ -1,0 +1,106 @@
+main{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.content{
+    text-align:center;
+}
+
+/* left */
+.content h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #298d1b;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    gap: 69px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0);
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    margin: 25px 90px 0px;
+}
+
+.left{
+    display:flex;
+    flex-direction:column;
+    align-items:baseline;
+    padding: 35px;
+}
+
+.box{
+    display: flex;
+   
+}
+.box h2{
+    margin-bottom: -10px;
+    color: #298d1b;
+}
+.icon{
+    padding: 4px;
+}
+.text{
+    display:flex;
+    flex-direction:column;
+    align-items:baseline;
+
+}
+
+/* right */
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #298d1b;
+    border-radius:20px ;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    flex-wrap:wrap ;
+}
+
+form input{
+    margin-top: 10px;
+    font-size: 15px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    background: none;
+    margin-bottom: 10px;
+    margin-left:20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    border-bottom: 2px solid #ffffff;
+    color: white;
+}
+ form input::placeholder{
+    color: #ffffff;
+}
+ form h4{
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 20px;
+    width: 600px;
+    margin-bottom: 7px;
+}
+
+ form textarea{
+    font-size: 15px;
+    width: 625px;
+    height: 80px;
+    border: none;
+    background: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    border-bottom: 2px solid #ffffff;
+    color: white;
+}
