@@ -16,6 +16,32 @@ export default function Form(){
 
     const signup=()=>setFormType("signup");
     const login=()=>setFormType("login");
+
+
+    // handle Login new 
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        const data = {
+            email: e.target.email.value,
+            password: e.target.password.value
+        };
+
+        const res = await fetch("http://localhost:8080/api/auth/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        });
+
+        if (res.ok) {
+            const userData = await res.json();
+            localStorage.setItem("user", JSON.stringify(userData)); // Save user globally
+            alert("Login successful!");
+            window.location.href = "/profile"; // Navigate to profile page
+        } else {
+            alert("Invalid credentials");
+        }
+    };
+
         
 
 
@@ -40,6 +66,7 @@ export default function Form(){
                 <div className="form">
                     {formType === "login" ? (
                         
+                        
                         <form>
                             <input type="email" name="email" className="email" placeholder="Email" required />
                             <input type="password" name="password" className="password" placeholder="Password" required />
@@ -48,7 +75,7 @@ export default function Form(){
 
                             )}
                             
-                            <BlackButton lable="Login" />
+                            <BlackButton lable="Login" onClick={handleLogin}/>
                            
 
                             <p>Don't have an account </p>
